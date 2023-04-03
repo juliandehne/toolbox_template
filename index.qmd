@@ -1,0 +1,41 @@
+---
+title: "Minimal Example of Tutorial in Markdown with R"
+author: Raniere Silva
+---
+
+This example demonstrates the **required** metadata by Methods Hub.
+
+## Execution of R code
+
+```{r}
+1 + 1
+```
+
+## Dependencies
+
+Packages that need to be installed for the reader should be listed in the `install.R` file. For example, with
+
+```r
+install.packages("jsonlite")
+```
+
+in the `install.R` file, is possible to execute
+
+```{r}
+library(jsonlite)
+
+json <-
+'[
+  {"Name" : "Mario", "Age" : 32, "Occupation" : "Plumber"}, 
+  {"Name" : "Peach", "Age" : 21, "Occupation" : "Princess"},
+  {},
+  {"Name" : "Bowser", "Occupation" : "Koopa"}
+]'
+
+json |>
+    fromJSON()
+```
+
+## Binder
+
+The link to Binder will launch the RStudio interface.
