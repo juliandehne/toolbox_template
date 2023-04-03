@@ -39,3 +39,9 @@ json |>
 ## Binder
 
 The link to Binder will launch the RStudio interface.
+
+:::{.callout-important}
+
+Binder uses the information in `runtime.txt` to launch RStudio.
+
+:::
