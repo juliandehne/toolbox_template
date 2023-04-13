@@ -11,6 +11,12 @@ This example demonstrates the **required** metadata by Methods Hub.
 1 + 1
 ```
 
+## Creation of figure with R
+
+```{r}
+plot(rnorm(10), rnorm(10))
+```
+
 ## Dependencies
 
 Packages that need to be installed for the reader should be listed in the `install.R` file. For example, with
@@ -45,3 +51,7 @@ The link to Binder will launch the RStudio interface.
 Binder uses the information in `runtime.txt` to launch RStudio.
 
 :::
+
+## Dependencies
+
+![Quarto](img/quarto.png)
