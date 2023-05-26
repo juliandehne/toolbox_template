@@ -1,4 +1,4 @@
-# Minimal Example of Tutorial in Quarto with R
+# Minimal Example of Tutorial in Quarto with R and System Requirements
 
 [index.qmd](index.qmd) show all the **required** metadata used by Methods Hub.
 
