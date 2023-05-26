@@ -22,24 +22,15 @@ plot(rnorm(10), rnorm(10))
 Packages that need to be installed for the reader should be listed in the `install.R` file. For example, with
 
 ```r
-install.packages("jsonlite")
+install.packages("xml2")
 ```
 
 in the `install.R` file, is possible to execute
 
 ```{r}
-library(jsonlite)
+library(xml2)
 
-json <-
-'[
-  {"Name" : "Mario", "Age" : 32, "Occupation" : "Plumber"}, 
-  {"Name" : "Peach", "Age" : 21, "Occupation" : "Princess"},
-  {},
-  {"Name" : "Bowser", "Occupation" : "Koopa"}
-]'
-
-json |>
-    fromJSON()
+html_page <- read_html("<html><title>Hi<title></html>")
 ```
 
 ## Binder
