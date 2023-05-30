@@ -31,6 +31,8 @@ in the `install.R` file, is possible to execute
 library(xml2)
 
 html_page <- read_html("<html><title>Hi<title></html>")
+
+xml_find_first(html_page, '//title')
 ```
 
 ## Binder
