@@ -32,7 +32,7 @@ library(xml2)
 
 html_page <- read_html("<html><title>Hi<title></html>")
 
-xml_find_first(html_page, '//title')
+xml_name(html_page)
 ```
 
 ## Binder
