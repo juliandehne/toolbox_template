@@ -22,17 +22,19 @@ plot(rnorm(10), rnorm(10))
 Packages that need to be installed for the reader should be listed in the `install.R` file. For example, with
 
 ```r
-install.packages("xml2")
+install.packages("units")
 ```
 
 in the `install.R` file, is possible to execute
 
 ```{r}
-library(xml2)
+library(units)
 
-html_page <- read_html("<html><title>Hi<title></html>")
+spd1 = set_units(1:5, m/s)
 
-xml_name(html_page)
+spd2 = set_units(1:5, km/h)
+
+spd1 + spd2
 ```
 
 ## Binder
