@@ -16,5 +16,5 @@ jobs:
     - uses: action-pack/gitlab-sync@v3
       with:
         username: ${{ github.actor }}
-        url: https://git.gesis.org/methods-hub/minimal-example-qmd-rstats-xml2.git
+        url: https://git.gesis.org/methods-hub/minimal-example-qmd-rstats-units.git
         token: ${{ secrets.GITLAB_TOKEN }}
