@@ -19,13 +19,19 @@ plot(rnorm(10), rnorm(10))
 
 ## Dependencies
 
-Packages that need to be installed for the reader should be listed in the `install.R` file. For example, with
+Packages that need to be installed for the reader should be listed in the `install.R` file. For example,
 
 ```r
 install.packages("units")
 ```
 
-in the `install.R` file, is possible to execute
+R packages with system requirements, must have the system requirements installed using the `apt.txt`. For example,
+
+```
+libudunits2-dev
+```
+
+With the R package in the `install.R` file and the system requirements in the `apt.txt` file, is possible to execute
 
 ```{r}
 library(units)
