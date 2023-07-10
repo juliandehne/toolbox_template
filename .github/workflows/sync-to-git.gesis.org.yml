@@ -8,6 +8,7 @@ on:
 jobs:
   sync:
     name: GitLab Sync
+    if: github.repository == 'GESIS-Methods-Hub/minimal-example-qmd-rstats-units'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
