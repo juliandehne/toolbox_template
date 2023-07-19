@@ -1,6 +1,8 @@
 ---
 title: "Minimal Example of Tutorial in Markdown with R and System Requirements"
 author: Raniere Silva
+image: img/cover.jpg
+image-alt: Computer screen showing calculator app.
 ---
 
 This example demonstrates the **required** metadata by Methods Hub.
