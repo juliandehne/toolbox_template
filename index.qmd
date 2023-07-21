@@ -5,7 +5,7 @@ image: img/cover.jpg
 image-alt: Computer screen showing calculator app.
 ---
 
-This example demonstrates the **required** metadata by Methods Hub.
+This example illustrates the **required** metadata by [`methodshub`](https://github.com/GESIS-Methods-Hub/methodshub).
 
 ## Execution of R code
 
@@ -47,11 +47,11 @@ spd1 + spd2
 
 ## Binder
 
-The link to Binder will launch the RStudio interface.
+The link to Binder will launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
 
 :::{.callout-important}
 
-Binder uses the information in `runtime.txt` to launch RStudio.
+Binder uses the information in `runtime.txt` to launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
 
 :::
 
