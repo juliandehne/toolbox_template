@@ -38,9 +38,9 @@ a + b
 Annotation of code blocks is also supported. For example,
 
 ```r
-(3 / 2) != (3 %/% 2) # <1>
+(3 %/% 2) != (3 %% 2) # <1>
 ```
-1. `%/%` calculates the remainder on integer division.
+1. `%%` calculates the remainder on integer division.
 
 ## Creation of figure with R
 
