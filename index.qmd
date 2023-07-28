@@ -1,17 +1,46 @@
 ---
-title: "Minimal Example of Tutorial in Markdown with R and System Requirements"
+title: "Minimal Example of Tutorial in Quarto with R and System Requirements"
 author: Raniere Silva
 image: img/cover.jpg
 image-alt: Computer screen showing calculator app.
+bibliography: references.bib
 ---
 
-This example illustrates the **required** metadata by [`methodshub`](https://github.com/GESIS-Methods-Hub/methodshub).
+This example illustrates the **required** metadata by [`andrew`](https://github.com/GESIS-Methods-Hub/andrew) for a tutorial written as a Quarto Document, an extension to Markdown [@markdown2004].
+
+Although footnotes are supported, the use of footnotes is discouraged[^1].
+
+[^1]: Because of it makes navigation harder.
+
+Math can be written using [LaTeX](https://www.latex-project.org/) and is render by [MathJax](https://www.mathjax.org/). Both inline, for example $x$, and standalone, for example $$x = \sqrt{a^2 + b^2}\text{,}$$ is supported.
+
+::: {.callout-important}
+
+To draw attention, wrap the text inside a callout blocks.
+
+:::
+
+Cross reference of figures, tables, equations, ... is also supported. For example, see @fig-north.
+
+![Photo of weathercock by Mat Brown. Available at <https://www.pexels.com/photo/silhouette-of-wind-vane-552600/>.](img/north.jpg){#fig-north}
 
 ## Execution of R code
 
+R code can be executed and the output can be included inline, for example `1 + 1` is equal to `r 1 + 1`, and standalone, for example
+
 ```{r}
-1 + 1
+a <- 1
+b <- 1
+
+a + b
 ```
+
+Annotation of code blocks is also supported. For example,
+
+```r
+(3 / 2) != (3 %/% 2) # <1>
+```
+1. `%/%` calculates the remainder on integer division.
 
 ## Creation of figure with R
 
@@ -54,7 +83,3 @@ The link to Binder will launch [RStudio IDE](https://posit.co/products/open-sour
 Binder uses the information in `runtime.txt` to launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
 
 :::
-
-## Dependencies
-
-![Quarto](img/quarto.png)
