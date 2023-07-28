@@ -1,6 +1,6 @@
 # Minimal Example of Tutorial in Quarto with R and System Requirements
 
-[`index.qmd`](index.qmd) illustrates all the **required** metadata used by [`methodshub`](https://github.com/GESIS-Methods-Hub/methodshub).
+[`index.qmd`](index.qmd) illustrates all the **required** metadata used by [`andrew`](https://github.com/GESIS-Methods-Hub/andrew).
 
 This repository uses [`install.R`](install.R) and [`apt.txt`](apt.txt) as [configuration file](https://mybinder.readthedocs.io/en/latest/using/config_files.html).
 [`apt.txt`](apt.txt) is required because of the system requirements of the [units R package](https://cran.r-project.org/web/packages/units/index.html).
@@ -30,10 +30,10 @@ Execution halted
 
 ## Supported Features
 
-| Feature | [`methodshub`](https://github.com/GESIS-Methods-Hub/methodshub) | Notes |
+| Feature | [`andrew`](https://github.com/GESIS-Methods-Hub/andrew) | Notes |
 | --- | --- | --- |
 | Pandoc’s Markdown | 👍 | |
-| Callout Blocks | 👍 | |
+| Callout Blocks | 😥 | See https://github.com/GESIS-Methods-Hub/andrew/issues/149 |
 | Cross References | 👍 | |
 | Citations and Bibliographies | 👍 | |
 | [Code Annotation](https://quarto.org/docs/authoring/code-annotation.html) | 👍 | Requires Quarto >= 1.3 |
