@@ -83,3 +83,8 @@ The link to Binder will launch [RStudio IDE](https://posit.co/products/open-sour
 Binder uses the information in `runtime.txt` to launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
 
 :::
+
+## References
+
+::: {#refs}
+:::
