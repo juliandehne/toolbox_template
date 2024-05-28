@@ -45,6 +45,12 @@ Annotation of code blocks is also supported. For example,
 ## Creation of figure with R
 
 ```{r}
+#| echo: false
+
+knitr::opts_chunk$set(dev = 'svg')
+```
+
+```{r}
 plot(runif(10, min=0, max=10), type='l')
 ```
 
