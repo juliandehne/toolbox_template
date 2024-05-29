@@ -51,7 +51,20 @@ knitr::opts_chunk$set(dev = 'svg')
 ```
 
 ```{r}
-plot(runif(10, min=0, max=10), type='l')
+# We need a deterministic output here because we are using this for unit testing.
+
+# data <- runif(10, min=0, max=10)
+data <- c(
+  9.0629027,
+  5.3972500,
+  0.4133466,
+  0.3981549,
+  6.8776325,
+  7.6101721,
+  8.9581236
+)
+
+plot(data, type='l')
 ```
 
 ## Dependencies
