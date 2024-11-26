@@ -1,4 +1,4 @@
-# Minimal Example of Tutorial in Quarto with R and System Requirements
+# Minimal Tool Template in Quarto with R and System Requirements
 
 [`index.qmd`](index.qmd)  contains the sample structure for the Kodaqs_Toobox.
 
