@@ -1,107 +1,46 @@
 ---
 title: "Minimal Example of Tutorial in Quarto with R and System Requirements"
-author: Raniere Silva
+author:
+    - name: "author 1"
+    - name: "author 2"
+    - name: "author 3"
 image: img/cover.jpg
 image-alt: Computer screen showing calculator app.
 bibliography: references.bib
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
 ---
 
-This example illustrates the **required** metadata by [`andrew`](https://github.com/GESIS-Methods-Hub/andrew) for a tutorial written as a Quarto Document, an extension to Markdown [@markdown2004].
 
-Although footnotes are supported, the use of footnotes is discouraged[^1].
+# At a glance
+<!-- Summary with main points of the tool in 2-3 bullet points -->
 
-[^1]: Because of it makes navigation harder.
+# Introduction
 
-Math can be written using [LaTeX](https://www.latex-project.org/) and is render by [MathJax](https://www.mathjax.org/). Both inline, for example $x$, and standalone, for example $$x = \sqrt{a^2 + b^2}\text{,}$$ is supported.
+# Set-up
 
-::: {.callout-important}
+## Data/Data and Measures/...
+<!--this heading is not mandatory and can be adjusted to your specific tool structure-->
 
-To draw attention, wrap the text inside a callout blocks.
+## Getting started
+<!-- for package installation and loading data sets; heading is not mandatory -->
 
+# Tool application
+
+<!--subheadings for tool application can be specified "freely" and depending on structure of your tool -->
+
+
+::: {.callout-note title="Custom Note Title"}
+This can be additional information you want to provide and visually
+separate from your main text.
 :::
 
-Cross reference of figures, tables, equations, ... is also supported. For example, see @fig-north.
+<!-- Additional information can be included as callout blocks with titles, such as
+"Be careful", "Good to know", or "Package-specific feature"-->
 
-![Photo of weathercock by Mat Brown. Available at <https://www.pexels.com/photo/silhouette-of-wind-vane-552600/>.](img/north.jpg){#fig-north}
 
-## Execution of R code
+# Conclusion and recommendations
 
-R code can be executed and the output can be included inline, for example `1 + 1` is equal to `r 1 + 1`, and standalone, for example
 
-```{r}
-a <- 1
-b <- 1
-
-a + b
-```
-
-Annotation of code blocks is also supported. For example,
-
-```r
-(3 %/% 2) != (3 %% 2) # <1>
-```
-1. `%%` calculates the remainder on integer division.
-
-## Creation of figure with R
-
-```{r}
-#| echo: false
-
-knitr::opts_chunk$set(dev = 'svg')
-```
-
-```{r}
-# We need a deterministic output here because we are using this for unit testing.
-
-# data <- runif(10, min=0, max=10)
-data <- c(
-  9.0629027,
-  5.3972500,
-  0.4133466,
-  0.3981549,
-  6.8776325,
-  7.6101721,
-  8.9581236
-)
-
-plot(data, type='l')
-```
-
-## Dependencies
-
-Packages that need to be installed for the reader should be listed in the `install.R` file. For example,
-
-```r
-install.packages("units")
-```
-
-R packages with system requirements, must have the system requirements installed using the `apt.txt`. For example,
-
-```
-libudunits2-dev
-```
-
-With the R package in the `install.R` file and the system requirements in the `apt.txt` file, is possible to execute
-
-```{r}
-library(units)
-
-spd1 = set_units(1:5, m/s)
-
-spd2 = set_units(1:5, km/h)
-
-spd1 + spd2
-```
-
-## Binder
-
-The link to Binder will launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
-
-:::{.callout-important}
-
-Binder uses the information in `runtime.txt` to launch [RStudio IDE](https://posit.co/products/open-source/rstudio-server/).
-
-:::
 
 ## References
 
