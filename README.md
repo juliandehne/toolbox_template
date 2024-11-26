@@ -30,6 +30,8 @@ Execution halted
 | image | | Preferable as 900×600 pixels. |
 | image-alt | | |
 
+Please note that the citation field is not supported as metadata. Instead a [CITATION.cff](https://citation-file-format.github.io/) file should be used
+
 ## Supported Features
 
 | Feature                                                                   | [`andrew`](https://github.com/GESIS-Methods-Hub/andrew) | Notes                                                                       |
